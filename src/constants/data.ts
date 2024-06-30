@@ -28,32 +28,24 @@ export const navLinks = [
         id: "#contact",
         name: "Contact",
     },
-]
+] as const;
 
 export const experiencesData = [
     {
-        title: "Graduated bootcamp",
-        location: "Miami, FL",
+        title: "Web Developer Intern",
+        location: "Bengaluru, India",
         description:
-            "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-        icon: React.createElement(LuGraduationCap),
-        date: "2019",
-    },
-    {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
-        description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+            "I worked as a Web Developer Intern for 1 month . I also up-killed to the full stack.",
         icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
+        date: "09/2023 - 10/2023",
     },
     {
         title: "Full-Stack Developer",
-        location: "Houston, TX",
+        location: "Bengaluru, India",
         description:
             "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
         icon: React.createElement(FaReact),
-        date: "2021 - present",
+        date: "03/2024 - present",
     },
 ]
 
