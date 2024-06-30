@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <ReduxProvider>
       <main className=" min-h-screen border-2 ">
-        <AboutSection />
+        {/* <AboutSection /> */}
       </main>
     </ReduxProvider>
   );
