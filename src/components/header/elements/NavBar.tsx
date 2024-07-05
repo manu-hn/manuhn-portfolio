@@ -14,7 +14,7 @@ const NavBar = (props: Props) => {
                     navLinks.map((link, index) => (
                         <motion.li
                             key={link.id}
-                            className='hover:text-gray-950  hover:font-semibold transition text-xs sm:text-lg xxs:text-sm'
+                            className='hover:text-gray-950  hover:font-semibold transition text-xs xxs:text-sm sm:text-sm lg:text-lg'
                             initial={{ y: -100, opacity: 0 }}
                             animate={{
                                 y: 0, opacity: 1, transition: {

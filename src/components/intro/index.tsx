@@ -1,45 +1,42 @@
 'use client';
 import Image from 'next/image';
 import React from 'react';
-import ManuHNImage from "@/assets/images/ManuHN - Copy.jpg";
 import { motion } from "framer-motion";
+import SelfTypingIntro from './elements/SelfTypingIntro';
+import Link from 'next/link';
+import SelfImage from './elements/SelfImage';
+import SocialLinks from './elements/SocialLinks';
 
 type Props = {}
 
 const Introduction = (props: Props) => {
     return (
-        <section className='w-full'>
-            <div className='flex items-center justify-center z-10'>
-                <div className='relative'>
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0 }}
+        <section className='w-full flex flex-col justify-center '>
+            <SelfImage />
+            <div className='w-full flex justify-center '>
+                <div className='text-xs mx-2 sm:mx-0 md:text-xl ' >
+                    <motion.p className='w-full  leading-7'
+                        initial={{ opacity: 0, y: 100 }}
                         animate={{
-                            opacity: 1, scale: 1, transition: {
-                                duration: 0.75,
-                                type: "tween"
+                            opacity: 1, y: 0, transition: {
+                                duration: 0.65
                             }
                         }}
                     >
-                        <Image alt='Manu H N' src={ManuHNImage} quality={100}
-                            className='h-28 w-28 z-10 rounded-full object-cover border-[0.3rem] shadow-lg'
-                            priority={true} />
-                    </motion.div>
-
-                    <motion.span className='text-3xl absolute bottom-0 right-0 '
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale: 1, transition: {
-                            duration: 0.75,
-                            type: "spring",
-                            stiffness : 125,
-                            delay : 0.1,
-                            
-
-                        } }}
-                    >
-                        👋
-                    </motion.span>
+                        Hello, I am <span className='font-bold'>Manu H N</span>,  I&apos;m a <SelfTypingIntro />
+                    </motion.p>
+                    <motion.p
+                        initial={{ opacity: 0, y: 100 }}
+                        animate={{
+                            opacity: 1, y: 0, transition: {
+                                duration: 0.75
+                            }
+                        }}
+                        className='leading-7'>I enjoy building sites & apps. My focus is Full Stack - (MERN & Next.js) </motion.p>
                 </div>
+
             </div>
+            <SocialLinks />
         </section>
     )
 }
