@@ -10,6 +10,7 @@ export default function Home() {
       <main className=" min-h-screen  flex flex-col justify-center items-center">
         <Introduction />
         <SectionDivider />
+        <AboutSection />
       </main>
     </ReduxProvider>
   );
