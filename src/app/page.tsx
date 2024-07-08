@@ -1,12 +1,15 @@
 
 import AboutSection from "@/components/about";
+import SectionDivider from "@/components/divider";
+import Introduction from "@/components/intro";
 import ReduxProvider from "@/store/ReduxProvider";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <ReduxProvider>
-      <main className=" min-h-screen border-2 ">
+      <main className=" min-h-screen  flex flex-col justify-center items-center">
+        <Introduction />
+        <SectionDivider />
         <AboutSection />
       </main>
     </ReduxProvider>
