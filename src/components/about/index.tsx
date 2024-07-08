@@ -2,6 +2,7 @@
 
 import React from 'react';
 import HeadingSection from '@/components/heading';
+import { motion } from "framer-motion";
 
 
 
@@ -10,7 +11,11 @@ type Props = {}
 const AboutSection = (props: Props) => {
 
     return (
-        <section className='w-full flex flex-col justify-center items-center'>
+        <motion.section className='w-full flex flex-col justify-center items-center' id='about'
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.175 }}
+        >
            
             <HeadingSection classNames='text-[1.25em] md:text-3xl font-medium capitalize my-4 text-center'>About Me</HeadingSection>
             <div className='w-5/6 md:w-2/4 '>
@@ -30,7 +35,7 @@ const AboutSection = (props: Props) => {
                     always on the lookout for new learning opportunities and ways to expand my horizons.
                 </p>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
