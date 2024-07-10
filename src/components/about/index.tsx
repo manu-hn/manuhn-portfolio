@@ -11,14 +11,14 @@ type Props = {}
 const AboutSection = (props: Props) => {
 
     return (
-        <motion.section className='w-full flex flex-col justify-center items-center' id='about'
+        <motion.section className='w-full flex flex-col justify-center items-center mt-12' id='about'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.175 }}
         >
            
             <HeadingSection classNames='text-[1.25em] md:text-3xl font-medium capitalize my-4 text-center'>About Me</HeadingSection>
-            <div className='w-5/6 md:w-2/4 '>
+            <div className='w-5/6 md:w-3/4 lg:w-2/4'>
                 <p className='text-justify text-xs leading-6 md:text-lg my-3 '>
                     With an <span className='font-medium italic underline underline-offset-4'> Engineering </span>degree and a focus on <span>Full Stack Web Development</span> in the <span>MERN stack</span>,
                     I excel in JavaScript, <span className='font-medium '>
