@@ -1,12 +1,16 @@
-import { createSlice } from "@reduxjs/toolkit";
+import type { SectionName } from "@/types/types";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-
-export interface ThemeState {
+interface ThemeState {
     isItDarkTheme: boolean;
+    activeSection: SectionName;
+    lastTimeClicked: number;
 }
 
 const initialState: ThemeState = {
     isItDarkTheme: false,
+    activeSection: "Home",
+    lastTimeClicked: 0,
 };
 
 export const themeSlice = createSlice({
@@ -16,8 +20,14 @@ export const themeSlice = createSlice({
         changeTheme: (state) => {
             state.isItDarkTheme = !state.isItDarkTheme;
         },
+        changeActiveSection: (state, action: PayloadAction<SectionName>) => {
+            state.activeSection = action.payload;
+        },
+        updateLastTimeClicked: (state, action: PayloadAction<number>) => {
+            state.lastTimeClicked = action.payload;
+        }
     },
 });
 
-export const { changeTheme } = themeSlice.actions;
+export const { changeTheme, changeActiveSection, updateLastTimeClicked } = themeSlice.actions;
 export default themeSlice.reducer;

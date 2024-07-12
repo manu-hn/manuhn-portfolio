@@ -3,20 +3,23 @@
 import React from 'react';
 import HeadingSection from '@/components/heading';
 import { motion } from "framer-motion";
+import useIsSectionInView from '@/lib/hooks/useIsSectionInView';
 
 
 
 type Props = {}
 
 const AboutSection = (props: Props) => {
+    const { ref } = useIsSectionInView({ sectionName: "About", threshold: 0.8 });
 
     return (
-        <motion.section className='w-full flex flex-col justify-center items-center mt-12' id='about'
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.175 }}
+        <motion.section className='w-full flex flex-col justify-center items-center scroll-mt-28' id='about'
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.175 }}
+            ref={ref}
         >
-           
+
             <HeadingSection classNames='text-[1.25em] md:text-3xl font-medium capitalize my-4 text-center'>About Me</HeadingSection>
             <div className='w-5/6 md:w-3/4 lg:w-2/4'>
                 <p className='text-justify text-xs leading-6 md:text-lg my-3 '>

@@ -1,13 +1,17 @@
+"use client";
 import React from 'react';
 import ProjectsHeading from "@/components/heading"
 import { myProjectsData } from '@/constants/data';
 import ProjectCard from './elements/ProjectCard';
+import useIsSectionInView from '@/lib/hooks/useIsSectionInView';
 
 type Props = {}
 
 const ProjectSection = (props: Props) => {
+    const { ref } = useIsSectionInView({ sectionName: "Projects", threshold : 0.5 });
+    
     return (
-        <section className='w-full flex justify-center flex-col items-center' id='projects'>
+        <section ref={ref} className='w-full flex justify-center flex-col items-center' id='projects'>
             <ProjectsHeading classNames='text-[1.25em] md:text-3xl font-medium capitalize my-12 md:mt-28 text-center'>Here&apos;s What I&apos;ve Built and Building</ProjectsHeading>
             <div className=''>
                 {myProjectsData.map((project) => {

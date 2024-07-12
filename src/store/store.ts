@@ -1,15 +1,16 @@
+// store/store.ts
 import { configureStore } from "@reduxjs/toolkit";
-import { useDispatch, TypedUseSelectorHook, useSelector } from "react-redux";
-import themeSliceReducer from "@/store/slice/themeSlice.ts";
+import themeSliceReducer from "@/store/slice/themeSlice";
 
+// Configure the store
 export const store = configureStore({
-  reducer: { 'theme': themeSliceReducer },
+  reducer: { theme: themeSliceReducer },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({ serializableCheck: false }),
 });
 
+// Types for RootState and AppDispatch
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 
-export const useAppDispatch = () => useDispatch<AppDispatch>();
-export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
+

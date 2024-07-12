@@ -1,17 +1,18 @@
 'use client';
-import Image from 'next/image';
 import React from 'react';
 import { motion } from "framer-motion";
 import SelfTypingIntro from './elements/SelfTypingIntro';
-import Link from 'next/link';
 import SelfImage from './elements/SelfImage';
 import SocialLinks from './elements/SocialLinks';
+import useIsSectionInView from '@/lib/hooks/useIsSectionInView';
 
 type Props = {}
 
 const Introduction = (props: Props) => {
+    const { ref } = useIsSectionInView({ sectionName: "Home", threshold : 0.5 });
+
     return (
-        <section className='w-full flex flex-col justify-center '>
+        <section ref={ref} className='w-full flex flex-col justify-center '>
             <SelfImage />
             <div className='w-full flex justify-center '>
                 <div className='text-xs mx-2 sm:mx-0 md:text-xl ' >
