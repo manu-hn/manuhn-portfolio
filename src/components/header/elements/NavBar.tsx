@@ -17,7 +17,7 @@ const NavBar = (props: Props) => {
 
     return (
         <nav className='w-full h-full'>
-            <ul className='w-full h-full flex flex-wrap justify-evenly items-center'>
+            <ul className='w-full h-full flex flex-wrap justify-evenly items-center '>
                 {
                     navLinks.map((link, index) => (
                         <motion.li

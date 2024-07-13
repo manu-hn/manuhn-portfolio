@@ -1,7 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import ManuHN from "../../public/ManuHN.png";
 
 export const navLinks = [
@@ -50,44 +49,6 @@ export const experiencesData = [
     },
 ]
 
-// export const projectsData = [
-//     {
-//         title: "Pixify AI",
-//         description:
-//             "PixifyAI is an innovative project harnessing AI tools, specifically Cloudinary AI, for advanced image editing and manipulation capabilities.",
-//         tags: ["Next.js", "Clerk", "MongoDB", "Tailwind", "Stripe", "Shadcn Ui", "Cloudinary AI"],
-//         // imageUrl: corpcommentImg,
-//     },
-
-//     // {
-//     //     title: "FlowCraft AI",
-//     //     description:
-//     //         "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-//     //     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-//     //     // imageUrl: rmtdevImg,
-//     // },
-//     // {
-//     //     title: "AstralCV",
-//     //     description:
-//     //         "easyEstates is a modern Real Estate platform leveraging the MERN Stack and Tailwind CSS, allowing users to list, search, and contact property owners effortlessly.",
-//     //     tags: ["React", "TypeScript", "Node.js", "Express.js", "Tailwind", "Redux", "Firebase", "OAuth"],
-//     //     // imageUrl: rmtdevImg,
-//     // },
-//     {
-//         title: "easyEstates",
-//         description:
-//             "easyEstates is a modern Real Estate platform leveraging the MERN Stack and Tailwind CSS, allowing users to list, search, and contact property owners effortlessly.",
-//         tags: ["React", "TypeScript", "Node.js", "Express.js", "Tailwind", "Redux", "Firebase", "OAuth"],
-//         // imageUrl: rmtdevImg,
-//     },
-//     {
-//         title: "Netflix Clone",
-//         description:
-//             "Built with React Vite and styled with Tailwind CSS, my Netflix Clone offers a seamless user experience, powered by Firebase for data management and Formik for form handling.",
-//         tags: ["React", "Tailwind CSS", "Firebase", "Formik",
-//         // imageUrl: wordanalyticsImg,
-//     },
-// ]
 
 export const myProjectsData = [
     {
@@ -109,7 +70,7 @@ export const myProjectsData = [
             skill: "MongoDB",
 
         },
-     
+
         {
             id: "pixify-ai-skill-4",
             skill: "Tailwind",
@@ -122,7 +83,7 @@ export const myProjectsData = [
             id: "pixify-ai-skill-6",
             skill: "Stripe",
         },
-      
+
         {
             id: "pixify-ai-skill-7",
             skill: "Cloudinary AI",
@@ -162,7 +123,7 @@ export const myProjectsData = [
                 id: "easyestates-skill-6",
                 skill: "Express",
             },
-         
+
 
             {
                 id: "easyestates-skill-7",
@@ -190,12 +151,12 @@ export const myProjectsData = [
                 id: "netflixclone-skill-2",
                 skill: "Formik",
             },
-           
+
             {
                 id: "netflixclone-skill-3",
                 skill: "Firebase",
             },
-           
+
             {
                 id: "netflixclone-skill-4",
                 skill: "Tailwind",
@@ -205,22 +166,5 @@ export const myProjectsData = [
     },
 ];
 
-export const skillsData = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Express.js",
-    "Java",
-    "Git",
-    "Tailwind",
-    "MongoDB",
-    "Redux",
-    "MySQL",
-    "POSTMAN",
-    "Clerk",
-    "Framer Motion",
-] 
+
+
