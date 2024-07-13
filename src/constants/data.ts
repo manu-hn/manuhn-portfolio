@@ -1,6 +1,4 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+
 import ManuHN from "../../public/ManuHN.png";
 
 export const navLinks = [
@@ -30,24 +28,7 @@ export const navLinks = [
     },
 ] as const;
 
-export const experiencesData = [
-    {
-        title: "Web Developer Intern",
-        location: "Bengaluru, India",
-        description:
-            "I worked as a Web Developer Intern for 1 month . I also up-killed to the full stack.",
-        icon: React.createElement(CgWorkAlt),
-        date: "09/2023 - 10/2023",
-    },
-    {
-        title: "Full-Stack Developer",
-        location: "Bengaluru, India",
-        description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-        icon: React.createElement(FaReact),
-        date: "03/2024 - present",
-    },
-]
+
 
 
 export const myProjectsData = [

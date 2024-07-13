@@ -1,15 +1,6 @@
 import React from 'react';
-import Autoplay from "embla-carousel-autoplay";
 import SkillsHeading from "@/components/heading";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-
-} from "@/components/ui/carousel"
 import { SKILLS_TYPE } from '@/constants/skills';
-import SkillsAndTools from './SkillsAndTools';
-
 import { motion } from "framer-motion";
 
 type Props = {
