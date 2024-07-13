@@ -11,9 +11,9 @@ const ProjectSection = (props: Props) => {
     const { ref } = useIsSectionInView({ sectionName: "Projects", threshold : 0.5 });
     
     return (
-        <section ref={ref} className='w-full flex justify-center flex-col items-center' id='projects'>
+        <section ref={ref} className='w-full flex justify-center flex-col items-center scroll-mt-16' id='projects'>
             <ProjectsHeading classNames='text-[1.25em] md:text-3xl font-medium capitalize my-12 md:mt-28 text-center'>Here&apos;s What I&apos;ve Built and Building</ProjectsHeading>
-            <div className=''>
+            <>
                 {myProjectsData.map((project) => {
                     return (
                         <ProjectCard key={project.title}
@@ -26,7 +26,7 @@ const ProjectSection = (props: Props) => {
                         />
                     )
                 })}
-            </div>
+            </>
         </section>
     )
 }
