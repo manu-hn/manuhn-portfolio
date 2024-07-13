@@ -11,12 +11,13 @@ type Props = {}
 
 const AboutSection = (props: Props) => {
     const { ref } = useIsSectionInView({ sectionName: "About", threshold: 0.8 });
-
+    
     return (
         <motion.section className='w-full flex flex-col justify-center items-center scroll-mt-28' id='about'
             initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.175 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.25 }}
+            viewport={{ once: true }}
             ref={ref}
         >
 

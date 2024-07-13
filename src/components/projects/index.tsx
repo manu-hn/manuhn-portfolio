@@ -11,8 +11,8 @@ const ProjectSection = (props: Props) => {
     const { ref } = useIsSectionInView({ sectionName: "Projects", threshold : 0.5 });
     
     return (
-        <section ref={ref} className='w-full flex justify-center flex-col items-center scroll-mt-16' id='projects'>
-            <ProjectsHeading classNames='text-[1.25em] md:text-3xl font-medium capitalize my-12 md:mt-28 text-center'>Here&apos;s What I&apos;ve Built and Building</ProjectsHeading>
+        <section ref={ref} className='w-full flex justify-center flex-col items-center scroll-mt-28' id='projects'>
+            <ProjectsHeading classNames='text-[1.25em] md:text-3xl font-medium capitalize my-20 md:mt-44 k text-center'>Here&apos;s What I&apos;ve Built and Building</ProjectsHeading>
             <>
                 {myProjectsData.map((project) => {
                     return (

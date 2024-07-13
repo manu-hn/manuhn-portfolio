@@ -19,3 +19,21 @@ export type ProjectCardType = {
     imageUrl: StaticImageData;
 
 }
+
+
+// Career Highlights types
+
+export type DESCRIPTION_LIST_TYPE={
+    id : number;
+    text : string;
+}
+
+export type CAREER_HIGHLIGHTS_DATA ={
+    id : string;
+    title : string;
+    location : string;
+    date : string;
+    description : Array<DESCRIPTION_LIST_TYPE>;
+    icon : React.ReactElement;
+    workType : string;
+}
