@@ -44,7 +44,7 @@ const SkillsCarousel = ({ skillsAndTools, headingText, delay }: Props) => {
                 {
                     skillsAndTools?.map((skill, index) => {
                         return <motion.li key={skill?.id}
-                            className='bg-white border border-black/[0.1] rounded-xl px-5 py-3'
+                            className='bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80'
                             variants={fadeInAnimationVariants}
                             initial="initial" whileInView="animate" viewport={{ once: true }} custom={index}
                         >{skill?.skill}</motion.li>

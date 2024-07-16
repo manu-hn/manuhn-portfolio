@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ReduxProvider from "@/store/ReduxProvider";
 import HeaderComponent from "@/components/header";
+import FooterSection from "@/components/footer";
+import ThemeSwitchButton from "@/components/theme";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -22,21 +24,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.className} scroll-smooth`}>
-      <body className={`${inter.className} bg-slate-50 text-gray-950 pt-28 sm:pt-32`} cz-shortcut-listen={"false"} >
+      <body className={`${inter.className} bg-slate-50 text-gray-950 pt-28 sm:pt-32 dark:bg-gray-900 dark:text-gray-50 `} cz-shortcut-listen={"false"} >
         <ReduxProvider>
+
           <div className="bg-[#cdb2ca] -z-30 absolute top-[-6rem] right-[11rem] h-[30rem] w-[30rem] rounded-full blur-[10rem]
-        sm:w-[68rem]">
+        sm:w-[68rem] dark:bg-[#946263]">
 
           </div>
 
           <div className="bg-[#dbd7fb] absolute top-[-1rem] left-[-35rem] h-[30rem] w-[50rem] -z-10 rounded-full blur-[10rem]
-        sm:w-[68rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]">
+        sm:w-[68rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]">
 
           </div>
+         
 
           <HeaderComponent />
+              
+          
           {children}
           {/* <Toaster /> */}
+          <FooterSection />
+
+
+        <ThemeSwitchButton />
         </ReduxProvider>
       </body>
     </html>

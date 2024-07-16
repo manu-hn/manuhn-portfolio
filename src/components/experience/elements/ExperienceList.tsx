@@ -13,7 +13,7 @@ import ExperienceHeading from "@/components/heading";
 
 const ExperienceList = ({ date, description, icon, id, location, title, workType }: CAREER_HIGHLIGHTS_DATA) => {
   return (
-    <div className='w-full flex flex-col md:flex-row md:justify-between md:items-start items-center '>
+    <div className='w-[92.5%] md:w-full flex flex-col md:flex-row md:justify-between md:items-start items-center dark:bg-white/5 my-3 p-2 rounded-lg mx-4 '>
       <motion.div className='w-5/6 md:w-2/4 h-full flex flex-col'
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -24,7 +24,7 @@ const ExperienceList = ({ date, description, icon, id, location, title, workType
         <p className='text-xs md:text-sm'>{workType}</p>
         <p className='text-xs md:text-sm'>{location}</p>
       </motion.div>
-      <motion.div className='w-5/6 md:w-2/4'
+      <motion.div className='w-5/6 md:w-2/4  p-5 '
         initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.25 }}

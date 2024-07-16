@@ -9,10 +9,10 @@ type Props = {}
 
 const SubmitButton = (props: Props) => {
     const { pending } = useFormStatus()
-    console.log(pending)
+    
     return (
         <Button type="submit"
-            className='group hover:scale-110 hover:bg-gray-950 active:scale-105 disabled:scale-100 disabled:opacity-65'
+            className='group hover:scale-105 hover:bg-gray-950 active:scale-105 disabled:scale-100 disabled:opacity-65 dark:hover:bg-white/75'
             disabled={pending}>
             {pending ?
                 (<>
@@ -24,7 +24,7 @@ const SubmitButton = (props: Props) => {
                 :
                 (<>
                     Submit
-                    <FaPaperPlane className='mx-2 group-hover:translate-x-1 group-hover:-translate-y-1' />
+                    <FaPaperPlane className='mx-2 group-hover:translate-x-1 group-hover:-translate-y-1 ' />
                 </>)}
         </Button>
     )

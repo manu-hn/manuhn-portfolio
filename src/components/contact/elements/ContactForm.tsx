@@ -60,7 +60,7 @@ const ContactForm = () => {
     }
 
     return (
-        <motion.div className='w-5/6 md:w-2/3 text-center' initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
+        <motion.div className='w-5/6 md:w-2/3 text-center overflow-hidden py-2' initial={{ opacity: 0, }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
                     <FormField

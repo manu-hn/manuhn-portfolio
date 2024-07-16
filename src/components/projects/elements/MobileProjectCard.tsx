@@ -21,7 +21,7 @@ const MobileProjectCard = ({ description, githubLink, imageUrl, liveLink, tags, 
 
     return (
         <>
-            <motion.section className='project-card group block md:hidden' ref={scrollRef}
+            <motion.section className='project-card group block md:hidden dark:bg-white/10 dark:hover:bg-white/20 ' ref={scrollRef}
                 style={{
                     scale: scaleProgress, opacity: opacityProgress
                 }}
@@ -32,14 +32,14 @@ const MobileProjectCard = ({ description, githubLink, imageUrl, liveLink, tags, 
                         className='  w-full  rounded-t-lg shadow-xl
             
             h-full' />
-                    <div className=' flex items-center'>
-                        <h3 className='text-sm  sm:text-xl font-semibold '>{title}</h3>
+                    <div className=' flex items-center px-2'>
+                        <h3 className='text-sm  sm:text-xl font-semibold dark:text-white/85 my-3'>{title}</h3>
                         <Link href={liveLink} target='_blank'>
                             <HiOutlineExternalLink className='text-xl mx-5 text-blue-600 hover:text-orange-500  cursor-pointer' />
                         </Link>
                     </div>
-                    <p className='text-justify text-xs sm:text-sm'>{description}</p>
-                    <ul className='flex flex-wrap gap-3 my-5'>
+                    <p className='text-justify text-xs sm:text-sm px-2'>{description}</p>
+                    <ul className='flex flex-wrap gap-3 my-5 px-2' >
                         {
                             tags?.map((tag) => (
                                 <li key={tag?.id} className='project-tags'>{tag?.skill}</li>
