@@ -37,3 +37,11 @@ export type CAREER_HIGHLIGHTS_DATA ={
     icon : React.ReactElement;
     workType : string;
 }
+
+
+//Email Component Props
+
+export type EMAIL_PROPS = {
+    message :string;
+    senderEmail : string;
+}
