@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ReduxProvider from "@/store/ReduxProvider";
-import { Toaster } from "@/components/ui/toaster"
 import HeaderComponent from "@/components/header";
 
 const inter = Inter({

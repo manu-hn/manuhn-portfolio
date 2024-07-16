@@ -20,6 +20,7 @@ export default function Home() {
         <SkillsSection />
         <ExperienceSection />
         <ContactMeSection />
+        <FooterSection />
       </main>
     </NotistackProvider>
   );
