@@ -5,7 +5,11 @@ import ReduxProvider from "@/store/ReduxProvider";
 import { Toaster } from "@/components/ui/toaster"
 import HeaderComponent from "@/components/header";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter', // Optional: set a custom CSS variable for the font
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "ManuHN | Code Artisan",
@@ -18,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`${inter.className} scroll-smooth`}>
       <body className={`${inter.className} bg-slate-50 text-gray-950 pt-28 sm:pt-32`} cz-shortcut-listen={"false"} >
         <ReduxProvider>
           <div className="bg-[#cdb2ca] -z-30 absolute top-[-6rem] right-[11rem] h-[30rem] w-[30rem] rounded-full blur-[10rem]

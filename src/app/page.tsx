@@ -3,6 +3,7 @@ import AboutSection from "@/components/about";
 import ContactMeSection from "@/components/contact";
 import SectionDivider from "@/components/divider";
 import ExperienceSection from "@/components/experience";
+import FooterSection from "@/components/footer";
 import Introduction from "@/components/intro";
 import ProjectSection from "@/components/projects";
 import SkillsSection from "@/components/skills";
@@ -21,7 +22,6 @@ export default function Home() {
         <ContactMeSection />
       </main>
     </NotistackProvider>
-
   );
 }
 
