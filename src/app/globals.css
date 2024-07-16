@@ -33,6 +33,9 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    /* Add font variables */
+    --font-inter: 'Inter', sans-serif;
   }
 
   .dark {
@@ -69,6 +72,7 @@
 @layer base {
   * {
     @apply border-[var(--border)];
+    font-family: var(--font-inter); /* Apply Inter font globally */
   }
 
   body {
@@ -84,18 +88,18 @@
   }
 
   .social-button {
-    @apply flex px-3 text-[0.65rem] sm:text-[0.75rem] md:text-sm md:font-semibold py-2 items-center justify-between md:px-5 md:py-3 rounded-full md:rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 duration-300
+    @apply flex px-3 text-[0.65rem] sm:text-[0.75rem] md:text-sm md:font-semibold py-2 items-center justify-between md:px-5 md:py-3 rounded-full md:rounded-lg outline-none focus:scale-110 hover:scale-110 active:scale-105 duration-300;
   }
 
   .project-card {
-    @apply bg-gray-100 w-fit mx-8 sm:max-w-2xl relative border border-gray-300 overflow-hidden sm:h-[20rem] mb-8 last:mb-0
+    @apply bg-gray-100 w-fit mx-8 sm:max-w-2xl relative border border-gray-300 overflow-hidden sm:h-[20rem] mb-8 last:mb-0;
   }
 
   .project-tags {
-    @apply bg-black/[0.7] text-[0.5rem] px-3 py-1 sm:text-[0.75rem] text-white uppercase tracking-wider rounded-full
+    @apply bg-black/[0.7] text-[0.5rem] px-3 py-1 sm:text-[0.75rem] text-white uppercase tracking-wider rounded-full;
   }
 
   .project-text-data {
-    @apply px-4 py-8 w-[50%] sm:px-8 sm:py-8 sm:max-w-[55%] flex flex-col justify-evenly
+    @apply px-4 py-8 w-[50%] sm:px-8 sm:py-8 sm:max-w-[55%] flex flex-col justify-evenly;
   }
 }
