@@ -18,22 +18,22 @@ const LaptopProjectCard = ({description, githubLink,imageUrl, liveLink, tags, ti
     const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.65, 1]);
   return (
     <>
-    <motion.section className='project-card group hidden md:block' ref={scrollRef}
+    <motion.section className='project-card group hidden md:block dark:bg-white/10 dark:hover:bg-white/20 my-6' ref={scrollRef}
                 style={{
                     scale: scaleProgress, opacity: opacityProgress
                 }}>
                 <div className='project-text-data group-even:ml-[10.5rem] sm:group-even:ml-[21rem]'>
                     <div className=' flex items-center'>
-                        <h3 className='text-sm  sm:text-xl font-semibold '>{title}</h3>
+                        <h3 className='text-sm  sm:text-xl font-semibold dark:dark:text-white/60 '>{title}</h3>
                         <Link href={liveLink} target='_blank'>
                             <HiOutlineExternalLink className='text-xl mx-5 text-blue-600 hover:text-orange-500  cursor-pointer' />
                         </Link>
                     </div>
-                    <p className='text-justify text-xs sm:text-sm'>{description}</p>
+                    <p className='text-justify text-xs sm:text-sm dark:text-gray-100 dark:text-opacity-75'>{description}</p>
                     <ul className='flex flex-wrap gap-3 my-5'>
                         {
                             tags?.map((tag) => (
-                                <li key={tag?.id} className='project-tags'>{tag?.skill}</li>
+                                <li key={tag?.id} className='project-tags dark:bg-gray-950 dark:text-white/80'>{tag?.skill}</li>
                             ))
                         }
                     </ul>

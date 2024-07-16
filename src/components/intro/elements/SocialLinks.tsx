@@ -32,7 +32,7 @@ const SocialLinks = () => {
                         Let&apos;s Connect <BsArrowRight className='text-white text-xl mx-2 opacity-80 group-hover:translate-x-1 transition' />
                     </Link>
                     <Link href={RESUME_MANU} target='_blank'
-                        className='social-button bg-white text-black hover:bg-[#F8F8FF] group  
+                        className='social-button bg-white text-black hover:bg-[#F8F8FF] group dark:bg-white/35 
                         transition'>Get My CV <HiDownload className='text-lg mx-2 opacity-80 group-hover:translate-y-[2px] transition' />
                     </Link>
 
@@ -46,13 +46,13 @@ const SocialLinks = () => {
                         }
                     }}
                 >
-                    <Link href={LINKEDIN_MANU} target='_blank' className='social-links group:'>
+                    <Link href={LINKEDIN_MANU} target='_blank' className='social-links dark:text-sky-500 dark:bg-white/75 '>
                         <BsLinkedin className='text-xl ' />
                     </Link>
-                    <Link href={INSTAGRAM_MANU} target='_blank' className='social-links'>
+                    <Link href={INSTAGRAM_MANU} target='_blank' className='social-links dark:text-red-600 dark:bg-white/75 '>
                         <BsInstagram className='text-xl' />
                     </Link>
-                    <Link href={GITHUB_MANU} target='_blank' className='social-links'>
+                    <Link href={GITHUB_MANU} target='_blank' className='social-links dark:text-black dark:bg-white/75 '>
                         <BsGithub className='text-xl' />
                     </Link>
                 </motion.div>

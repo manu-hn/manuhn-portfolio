@@ -13,7 +13,7 @@ type Props = {
 
 const NavBar = (props: Props) => {
     const dispatch = useAppDispatch();
-    const {activeSection,} = useAppSelector((store)=>store?.theme);
+    const { activeSection, } = useAppSelector((store) => store?.theme);
 
     return (
         <nav className='w-full h-full'>
@@ -22,9 +22,10 @@ const NavBar = (props: Props) => {
                     navLinks.map((link, index) => (
                         <motion.li
                             key={link.id}
-                            className={clsx('hover:text-gray-950  hover:font-semibold transition text-xs xxs:text-sm sm:text-sm lg:text-lg relative',
+                            className={clsx(`hover:text-gray-950 dark:text-gray-600 dark:hover:text-gray-300  
+                                hover:font-semibold transition text-xs xxs:text-sm sm:text-sm lg:text-lg relative`,
                                 {
-                                    "text-gray-950  px-4 rounded-lg": activeSection === link.name,
+                                    "text-gray-950 dark:text-white  px-4 rounded-lg": activeSection === link.name,
 
                                 }
                             )}
@@ -34,22 +35,22 @@ const NavBar = (props: Props) => {
                                     duration: 0.75
                                 }
                             }}
-                        onClick={() => {
-                            dispatch(changeActiveSection(link.name));
-                            dispatch(updateLastTimeClicked(Date.now()));
-                        }}
+                            onClick={() => {
+                                dispatch(changeActiveSection(link.name));
+                                dispatch(updateLastTimeClicked(Date.now()));
+                            }}
                         >
                             <Link href={link.id}>{link.name}
                                 {
                                     link.name === activeSection && (
-                                    <motion.span className='bg-gray-200 rounded-full absolute inset-0 -z-10'
-                                        layoutId={`activeSection`}
-                                        transition={{
-                                            type: "spring",
-                                            stiffness: "300",
-                                            damping: "20"
-                                        }}
-                                    ></motion.span>
+                                        <motion.span className='bg-gray-200 dark:bg-gray-700 rounded-full absolute inset-0 -z-10'
+                                            layoutId={`activeSection`}
+                                            transition={{
+                                                type: "spring",
+                                                stiffness: "300",
+                                                damping: "20"
+                                            }}
+                                        ></motion.span>
                                     )
                                 }
                             </Link>
