@@ -5,9 +5,8 @@ import Link from 'next/link';
 import ContactForm from './elements/ContactForm';
 import useIsSectionInView from '@/lib/hooks/useIsSectionInView';
 
-type Props = {}
 
-const ContactMeSection = (props: Props) => {
+const ContactMeSection = () => {
     const { ref } = useIsSectionInView({ sectionName: "Contact", threshold : 0.5 });
     return (
         <section ref={ref} className='scroll-mt-28 w-full md:max-w-3xl flex flex-col justify-center items-center' id='contact'>
