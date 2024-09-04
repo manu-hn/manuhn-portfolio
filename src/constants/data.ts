@@ -1,5 +1,8 @@
 
-import ManuHN from "../../public/ManuHN.png";
+import ManuHN from "@/assets/images/ManuHN.png";
+import EasyEstate from "@/assets/projects/easyestates.png"
+import FitFlex from "@/assets/projects/FitFlex.png"
+import NetClone from "@/assets/projects/netclone.png"
 
 export const navLinks = [
     {
@@ -33,11 +36,11 @@ export const navLinks = [
 
 export const myProjectsData = [
     {
-        title: "Pixify AI",
+        title: "FlowCraft AI",
         liveLink: "",
-        githubLink: "",
+        githubLink: "https://github.com/manu-hn/FlowCraft-AI",
         description:
-            "PixifyAI is an innovative project harnessing AI tools, specifically Cloudinary AI, for advanced image editing and manipulation capabilities.",
+            "FlowCraft AI is a cutting-edge project leveraging AI-driven tools for streamlined workflow automation and process optimization, enhancing productivity and efficiency across various industries.",
         tags: [{
             id: "pixify-ai-skill-1",
             skill: "Next.js"
@@ -48,7 +51,7 @@ export const myProjectsData = [
         },
         {
             id: "pixify-ai-skill-3",
-            skill: "MongoDB",
+            skill: "Postgres",
 
         },
 
@@ -62,20 +65,17 @@ export const myProjectsData = [
         },
         {
             id: "pixify-ai-skill-6",
-            skill: "Stripe",
+            skill: "RazorPay",
         },
 
-        {
-            id: "pixify-ai-skill-7",
-            skill: "Cloudinary AI",
-        },
+      
         ],
         imageUrl: ManuHN,
     },
     {
         title: "easyEstates",
-        liveLink: "",
-        githubLink: "",
+        liveLink: "https://easy-estates.netlify.app/",
+        githubLink: "https://github.com/manu-hn/EasyEstate-Frontend",
         description:
             "easyEstates is a modern Real Estate platform leveraging the MERN Stack and Tailwind CSS, allowing users to list, search, and contact property owners effortlessly.",
         tags: [
@@ -115,12 +115,12 @@ export const myProjectsData = [
                 skill: "OAuth",
             }
         ],
-        imageUrl: ManuHN,
+        imageUrl: EasyEstate,
     },
     {
         title: "Netflix Clone",
-        liveLink: "",
-        githubLink: "",
+        liveLink: "https://manu-net-clone.netlify.app",
+        githubLink: "https://github.com/manu-hn/Netflix-Clone",
         description:
             "Built with React Vite and styled with Tailwind CSS, my Netflix Clone offers a seamless user experience, powered by Firebase for data management and Formik for form handling.",
         tags: [
@@ -142,6 +142,30 @@ export const myProjectsData = [
                 id: "netflixclone-skill-4",
                 skill: "Tailwind",
             },
+        ],
+        imageUrl: NetClone,
+    },
+    {
+        title: "Portfolio(Old)",
+        liveLink: "https://manu-net-clone.netlify.app",
+        githubLink: "https://github.com/manu-hn/Netflix-Clone",
+        description:
+            "Developed using Next.js and styled with Tailwind CSS, my portfolio showcases dynamic and responsive design, ensuring a smooth user experience.",
+        tags: [
+            {
+                id: "portfolio-skill-1",
+                skill: "Next.js",
+            },
+            {
+                id: "portfolio-skill-2",
+                skill: "Tailwind",
+            },
+
+            {
+                id: "portfolio-skill-3",
+                skill: "JavaScript",
+            },
+
         ],
         imageUrl: ManuHN,
     },

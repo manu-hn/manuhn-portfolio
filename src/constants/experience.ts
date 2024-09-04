@@ -9,7 +9,7 @@ export const experiencesData: Array<CAREER_HIGHLIGHTS_DATA> = [
 
     {
         id: "experience-1",
-        title: "Next.js Developer ",
+        title: "Next.js Developer - Frontend",
         location: "Bengaluru, India",
         description: [
             { id: 1, text: "Developed and implemented SEO-friendly, reusable components using Next.js, TypeScript, and Tailwind CSS." },

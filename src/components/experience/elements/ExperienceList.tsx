@@ -33,10 +33,10 @@ const ExperienceList = ({ date, description, icon, id, location, title, workType
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1" className=''>
             <AccordionTrigger className='text-sm md:text-[1rem]'>{date}</AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="">
               <ul className='list-decimal'>
                 {description.map((item) => (
-                  <li key={item?.id} className='text-justify border-b border-black/[0.1] my-3 md:my-1'>{item?.text}</li>
+                  <li key={item?.id} className='text-justify border-b border-black/[0.1] dark:border-white/[0.2] my-3 md:my-1'>{item?.text}</li>
                 ))}
               </ul>
             </AccordionContent>
