@@ -1,5 +1,6 @@
 
 import ManuHN from "@/assets/images/ManuHN.png";
+import ComingSoon from "@/assets/projects/coming-soon.avif"
 import EasyEstate from "@/assets/projects/easyestates.png"
 import FitFlex from "@/assets/projects/FitFlex.png"
 import NetClone from "@/assets/projects/netclone.png"
@@ -70,7 +71,7 @@ export const myProjectsData = [
 
       
         ],
-        imageUrl: ManuHN,
+        imageUrl: ComingSoon,
     },
     {
         title: "easyEstates",
@@ -144,6 +145,34 @@ export const myProjectsData = [
             },
         ],
         imageUrl: NetClone,
+    },
+    {
+        title: "FitFlex",
+        liveLink: "https://fitflex-typescrit-manu.vercel.app/",
+        githubLink: "https://github.com/manu-hn/fitness-app-react-tyescript",
+        description:
+            "Developed the FitFlex Gym App with React, TypeScript, Framer Motion, and Tailwind CSS, enhancing mobile responsiveness for a fluid and engaging fitness journey.",
+        tags: [
+            {
+                id: "portfolio-skill-1",
+                skill: "React",
+            },
+            {
+                id: "portfolio-skill-2",
+                skill: "Tailwind",
+            },
+
+            {
+                id: "portfolio-skill-3",
+                skill: "TypeScript",
+            },
+            {
+                id: "portfolio-skill-4",
+                skill: "Framer Motion",
+            },
+
+        ],
+        imageUrl: FitFlex,
     },
     {
         title: "Portfolio(Old)",

@@ -18,7 +18,7 @@ const ExperienceList = ({ date, description, icon, id, location, title, workType
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ delay: 0.5 }}
-        viewport={{ once: true }} 
+        viewport={{ once: true }}
       >
         <ExperienceHeading classNames='text-[1.05rem] md:text-lg mt-4 font-semibold w-full'>{title}</ExperienceHeading>
         <p className='text-xs md:text-sm'>{workType}</p>
