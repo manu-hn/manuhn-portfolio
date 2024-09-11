@@ -9,7 +9,7 @@ import TailwindCSS from "@/assets/logos/Tailwindcss.webp";
 import NodeJS from "@/assets/logos/NodeJS.webp";
 import ExpressJS from "@/assets/logos/ExpressJS.webp";
 import Java from "@/assets/logos/Java.webp";
-import Git from "@/assets/logos/Git.webp";
+import Git from "@/assets/logos/git.webp";
 import MongoDB from "@/assets/logos/MongoDB.webp";
 import MySQL from "@/assets/logos/MySQL.webp";
 
