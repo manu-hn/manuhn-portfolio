@@ -20,6 +20,7 @@ export const experiencesData: Array<CAREER_HIGHLIGHTS_DATA> = [
         icon: React.createElement(FaReact),
         date: "03/2024 - Present",
         workType : "Freelance",
+        link : "https://universalrasikaas.com/"
     },
     {
         id: "experience-2",
@@ -33,6 +34,7 @@ export const experiencesData: Array<CAREER_HIGHLIGHTS_DATA> = [
         icon: React.createElement(CgWorkAlt),
         date: "09/2023 - 10/2023",
         workType : "Internship",
+        link : "https://drive.google.com/drive/folders/1uvbShcvTmW9EwILd9ndGNqKc07DvCIwu?usp=sharing"
     },
     {
         id: "experience-0",
@@ -46,5 +48,6 @@ export const experiencesData: Array<CAREER_HIGHLIGHTS_DATA> = [
         icon: React.createElement(FaReact),
         date: "09/2022 - 10/2023",
         workType : "Boot Camp",
+        link : "https://drive.google.com/drive/folders/1uvbShcvTmW9EwILd9ndGNqKc07DvCIwu?usp=sharing"
     },
 ];

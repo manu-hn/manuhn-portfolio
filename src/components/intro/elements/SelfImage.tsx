@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react';
 
-import ManuHNImage from "@/assets/images/ManuHN - Copy.jpg";
+import ManuHNImage from "@/assets/images/ManuHN.jpg";
 import { motion } from "framer-motion";
 type Props = {}
 
@@ -19,7 +19,7 @@ const SelfImage = (props: Props) => {
                     }}
                 >
                     <Image alt='Manu H N' src={ManuHNImage} quality={100}
-                        className='h-28 w-28 z-10 rounded-full object-cover border-white border-[0.3rem] shadow-lg'
+                        className='size-36 md:h-44 md:w-44 z-10 rounded-full object-cover border-white border-[0.3rem] shadow-lg'
                         priority={true} />
                 </motion.div>
 

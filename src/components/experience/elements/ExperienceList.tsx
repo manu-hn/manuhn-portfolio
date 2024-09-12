@@ -9,9 +9,11 @@ import {
 } from "@/components/ui/accordion";
 import { CAREER_HIGHLIGHTS_DATA } from '@/types/types';
 import ExperienceHeading from "@/components/heading";
+import { HiOutlineExternalLink } from "react-icons/hi";
+import Link from 'next/link';
 
 
-const ExperienceList = ({ date, description, icon, id, location, title, workType }: CAREER_HIGHLIGHTS_DATA) => {
+const ExperienceList = ({ date, description, icon, id, location, title, workType, link }: CAREER_HIGHLIGHTS_DATA) => {
   return (
     <div className='w-[92.5%] md:w-full flex flex-col md:flex-row md:justify-between md:items-start items-center dark:bg-white/5 my-3 p-2 rounded-lg mx-4 '>
       <motion.div className='w-5/6 md:w-2/4 h-full flex flex-col'
@@ -20,7 +22,11 @@ const ExperienceList = ({ date, description, icon, id, location, title, workType
         transition={{ delay: 0.5 }}
         viewport={{ once: true }}
       >
-        <ExperienceHeading classNames='text-[1.05rem] md:text-lg mt-4 font-semibold w-full'>{title}</ExperienceHeading>
+        <ExperienceHeading classNames='text-[1.05rem] md:text-lg mt-4 font-semibold w-full flex items-center'>{title}
+          <Link href={`${link}`}target="_blank">
+          <HiOutlineExternalLink className="ml-1 text-blue-600" />
+          </Link>
+        </ExperienceHeading>
         <p className='text-xs md:text-sm'>{workType}</p>
         <p className='text-xs md:text-sm'>{location}</p>
       </motion.div>

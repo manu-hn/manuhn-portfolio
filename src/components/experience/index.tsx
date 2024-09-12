@@ -27,6 +27,7 @@ const ExperienceSection = (props: Props) => {
             location={exp?.location}
             id={exp?.id}
             workType={exp?.workType}
+            link={exp?.link}
           />
 
 

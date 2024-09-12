@@ -36,6 +36,7 @@ export type CAREER_HIGHLIGHTS_DATA ={
     description : Array<DESCRIPTION_LIST_TYPE>;
     icon : React.ReactElement;
     workType : string;
+    link? :string
 }
 
 
