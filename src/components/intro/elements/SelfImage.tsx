@@ -1,11 +1,10 @@
 import Image from 'next/image'
 import React from 'react';
 
-import ManuHNImage from "@/assets/images/ManuHN.jpg";
+import ManuHNImage from "@/assets/images/Manu.png";
 import { motion } from "framer-motion";
-type Props = {}
 
-const SelfImage = (props: Props) => {
+const SelfImage = () => {
     return (
         <div className='flex items-center justify-center z-10 '>
             <div className='relative'>
