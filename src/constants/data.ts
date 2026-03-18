@@ -3,7 +3,14 @@ import ManuHN from "@/assets/images/ManuHN.png";
 import ComingSoon from "@/assets/projects/coming-soon.avif"
 import EasyEstate from "@/assets/projects/easyestates.png"
 import FitFlex from "@/assets/projects/FitFlex.png"
-import NetClone from "@/assets/projects/netclone.png"
+import NetClone from "@/assets/projects/netclone.png";
+
+import Trace2TradeImg from "@/assets/projects/trace2trade.png";
+import PalmOilImg from "@/assets/projects/palmoil.png";
+import FarmerDashboardImg from "@/assets/projects/swn-vasundhara.png";
+import MergeApp from "@/assets/projects/mergeapp.png";
+
+
 
 export const navLinks = [
     {
@@ -69,7 +76,7 @@ export const myProjectsData = [
             skill: "RazorPay",
         },
 
-      
+
         ],
         imageUrl: ComingSoon,
     },
@@ -201,4 +208,74 @@ export const myProjectsData = [
 ];
 
 
-
+export const projectsData = [
+    {
+        title: "Trace2Trade",
+        liveLink: "https://trace2trade.com/",
+        githubLink: "", // keep empty if private
+        description:`Owned and architected the frontend of a real-time commodity trading platform with traceability using Next.js and TypeScript. Implemented WebSocket-based live price updates, geospatial tracking with Pigeon Maps, and improved performance by 40% through code splitting, lazy loading, and optimized state management.`,         
+        tags: [
+            { id: "t2t-1", skill: "Next.js" },
+            { id: "t2t-2", skill: "TypeScript" },
+            { id: "t2t-3", skill: "WebSockets" },
+            { id: "t2t-4", skill: "Pigeon Maps" },
+            // { id: "t2t-5", skill: "Redux" },
+            // { id: "t2t-6", skill: "Performance Optimization" },
+        ],
+        imageUrl: Trace2TradeImg,
+    },
+    {
+        title: "Palm Oil Analytics Dashboard",
+        liveLink: "",
+        githubLink: "",
+        description: "Developed a data-intensive analytics dashboard using React, Vite, Tailwind CSS, Zustand, and TanStack Query. Optimized API caching and fetching strategies to reduce redundant network calls and improve performance.",
+        tags: [
+            { id: "po-1", skill: "React" },
+            { id: "po-2", skill: "Zustand" },
+            { id: "po-3", skill: "TanStack Query" },
+            { id: "po-4", skill: "Tailwind" },
+            // { id: "po-5", skill: "Data Visualization" },
+        ],
+        imageUrl: PalmOilImg,
+    },
+    {
+        title: "Farmer Insights Dashboard",
+        liveLink: "",
+        githubLink: "",
+        description: "Built scalable dashboards handling large datasets with charts, tables, and map-based visualizations. Implemented geo-location based insights and a rule-based advisory system for crop recommendations.",
+        tags: [
+            { id: "fd-1", skill: "React" },
+            { id: "fd-2", skill: "Charts" },
+            { id: "fd-3", skill: "Maps" },
+            { id: "fd-4", skill: "Data Handling" },
+        ],
+        imageUrl: FarmerDashboardImg,
+    },
+    {
+        title: "Merge.online",
+        liveLink: "",
+        githubLink: "",
+        description: "Deployed a full-stack application on AWS EC2 with Nginx reverse proxy and PM2 process management. Configured production environments and optimized build workflows, currently integrating CI/CD using GitHub Actions.",
+        tags: [
+            { id: "merge-1", skill: "Node.js" },
+            { id: "merge-2", skill: "AWS EC2" },
+            { id: "merge-3", skill: "Nginx" },
+            { id: "merge-4", skill: "PM2" },
+            { id: "merge-5", skill: "CI/CD" },
+        ],
+        imageUrl: MergeApp,
+    },
+    // {
+    //     title: "GHG Sync",
+    //     liveLink: "",
+    //     githubLink: "",
+    //     description: "Developed an emissions tracking tool using React, Tailwind CSS, Formik, and Yup. Improved API performance using RTK Query with efficient caching.",
+    //     tags: [
+    //         { id: "ghg-1", skill: "React" },
+    //         { id: "ghg-2", skill: "Formik" },
+    //         { id: "ghg-3", skill: "Yup" },
+    //         { id: "ghg-4", skill: "RTK Query" },
+    //     ],
+    //     imageUrl: GHGImg,
+    // }
+]

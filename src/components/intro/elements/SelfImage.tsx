@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react';
 
-import ManuHNImage from "@/assets/images/Manu.png";
+import ManuHNImage from "@/assets/images/manu_hn.png";
 import { motion } from "framer-motion";
 
 const SelfImage = () => {
